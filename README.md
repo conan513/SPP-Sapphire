@@ -1,6 +1,6 @@
 ﻿# Sapphire - FINAL FANTASY XIV Server Emulator
 
-## This repo is an unofficial storage for compiled files
+## This repo is an unofficial storage for the compiled files
 Sapphire repo: https://github.com/SapphireServer/Sapphire
 
 <p align="center">
