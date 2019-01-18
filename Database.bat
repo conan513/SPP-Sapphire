@@ -5,7 +5,6 @@ set mainfolder=%CD%
 
 :start_database
 copy /Y "%mainfolder%\tools\Update.bat" ..
-pause
 cls
 if not exist "%mainfolder%\Database\bin\mysqld.exe" goto install_database
 copy "%mainfolder%\tools\connection.cnf" "%mainfolder%\Database"
