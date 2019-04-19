@@ -95,7 +95,7 @@ CREATE TABLE `charainfo` (
   `Orchestrion` binary(40) DEFAULT NULL,
   `EquippedMannequin` int(5) DEFAULT '0',
   `ConfigFlags` smallint(5) NOT NULL DEFAULT '0',
-  `QuestCompleteFlags` varbinary(396) DEFAULT NULL,
+  `QuestCompleteFlags` varbinary(476) DEFAULT NULL,
   `OpeningSequence` int(3) DEFAULT '0',
   `QuestTracking` binary(10) DEFAULT NULL,
   `GrandCompany` int(3) DEFAULT '0',
@@ -584,3 +584,21 @@ CREATE TABLE `landplaceditems` (
 )
 COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
 
+
+CREATE TABLE `charamonsternote` (
+  `CharacterId` int(20) NOT NULL,
+  `Category_0` binary(41) DEFAULT NULL,
+  `Category_1` binary(41) DEFAULT NULL,
+  `Category_2` binary(41) DEFAULT NULL,
+  `Category_3` binary(41) DEFAULT NULL,
+  `Category_4` binary(41) DEFAULT NULL,
+  `Category_5` binary(41) DEFAULT NULL,
+  `Category_6` binary(41) DEFAULT NULL,
+  `Category_7` binary(41) DEFAULT NULL,
+  `Category_8` binary(41) DEFAULT NULL,
+  `Category_9` binary(41) DEFAULT NULL,
+  `Category_10` binary(41) DEFAULT NULL,
+  `Category_11` binary(41) DEFAULT NULL,
+  `UPDATE_DATE` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY(`CharacterId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
